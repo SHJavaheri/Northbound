@@ -24,7 +24,8 @@ export const Contact = () => {
       ref={sectionRef}
       className="relative min-h-screen flex flex-col justify-between py-32 px-6 md:px-12 bg-deep-black"
     >
-      <div className="max-w-7xl mx-auto w-full flex flex-col items-center gap-12">
+      <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_top,_rgba(124,58,237,0.18),_rgba(10,10,10,0))] mix-blend-screen opacity-75" />
+      <div className="relative z-10 max-w-7xl mx-auto w-full flex flex-col items-center gap-12">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={isVisible ? { opacity: 1, y: 0 } : {}}

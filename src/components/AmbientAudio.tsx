@@ -12,7 +12,7 @@ export const AmbientAudio = ({ children }: PropsWithChildren) => {
 
   const setRef = useCallback((node: HTMLAudioElement | null) => {
     if (node) {
-      node.volume = 0.2;
+      node.volume = 0.05;
     }
     audioRef.current = node;
     setAudioElement(node);
@@ -22,7 +22,7 @@ export const AmbientAudio = ({ children }: PropsWithChildren) => {
     const audio = audioElement;
     if (!audio) return;
 
-    audio.volume = 0.2;
+    audio.volume = 0.05;
     const handleInteraction = () => {
       audio.play().catch(() => {});
       window.removeEventListener('pointerdown', handleInteraction);
