@@ -1,22 +1,27 @@
+import { AmbientAudio } from './components/AmbientAudio'
+import { BuildPhilosophy } from './components/BuildPhilosophy'
+import { Contact } from './components/Contact'
+import { FutureScope } from './components/FutureScope'
 import { Hero } from './components/Hero'
-import { WhatIsNorthbound } from './components/WhatIsNorthbound'
 import { Principles } from './components/Principles'
 import { Products } from './components/Products'
-import { BuildPhilosophy } from './components/BuildPhilosophy'
-import { FutureScope } from './components/FutureScope'
-import { Contact } from './components/Contact'
+import { VolumeControl } from './components/VolumeControl'
+import { WhatIsNorthbound } from './components/WhatIsNorthbound'
 
 function App() {
   return (
-    <div className="relative w-full overflow-x-hidden">
-      <Hero />
-      <WhatIsNorthbound />
-      <Principles />
-      <Products />
-      <BuildPhilosophy />
-      <FutureScope />
-      <Contact />
-    </div>
+    <AmbientAudio>
+      <div className="relative w-full overflow-x-hidden">
+        <Hero />
+        <WhatIsNorthbound />
+        <Principles />
+        <Products />
+        <BuildPhilosophy />
+        <FutureScope />
+        <Contact />
+        <VolumeControl />
+      </div>
+    </AmbientAudio>
   )
 }
 

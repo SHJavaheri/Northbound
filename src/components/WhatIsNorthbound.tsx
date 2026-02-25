@@ -38,7 +38,7 @@ export const WhatIsNorthbound = () => {
             What is Northbound?
           </h2>
           <p className="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-            A parent technology company building platforms that matter. We're not chasing trends—we're building foundations.
+            A parent technology company building platforms that matter. We're not chasing trends; we're building foundations.
           </p>
         </motion.div>
 
@@ -49,7 +49,7 @@ export const WhatIsNorthbound = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={isVisible ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: index * 0.2 }}
-              className="group relative p-8 rounded-2xl bg-gradient-to-b from-white/5 to-white/0 border border-white/10 backdrop-blur-sm hover:border-white/30 transition-all duration-500 hover:scale-105"
+              className="group relative p-8 rounded-2xl bg-gradient-to-b from-white/5 to-white/0 border border-white/10 backdrop-blur-sm hover:border-white/30 transition-all duration-500 hover:scale-105 hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(79,70,229,0.25)]"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500/0 to-purple-500/0 group-hover:from-blue-500/10 group-hover:to-purple-500/10 rounded-2xl transition-all duration-500" />
               

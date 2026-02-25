@@ -56,7 +56,7 @@ export const BuildPhilosophy = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={isVisible ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: index * 0.15 }}
-              className="group relative p-10 rounded-2xl bg-gradient-to-br from-white/5 to-transparent border border-white/10 hover:border-white/30 transition-all duration-500 hover:scale-105"
+              className="group relative p-10 rounded-2xl bg-gradient-to-br from-white/5 to-transparent border border-white/10 hover:border-white/30 transition-all duration-500 hover:scale-105 hover:-translate-y-1 hover:shadow-[0_25px_60px_rgba(79,70,229,0.25)]"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500/0 via-purple-500/0 to-pink-500/0 group-hover:from-blue-500/5 group-hover:via-purple-500/5 group-hover:to-pink-500/5 rounded-2xl transition-all duration-500" />
               

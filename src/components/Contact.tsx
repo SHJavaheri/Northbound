@@ -22,9 +22,9 @@ export const Contact = () => {
     <section
       id="contact"
       ref={sectionRef}
-      className="relative min-h-screen flex items-center justify-center py-32 px-6 md:px-12 bg-deep-black"
+      className="relative min-h-screen flex flex-col justify-between py-32 px-6 md:px-12 bg-deep-black"
     >
-      <div className="max-w-7xl mx-auto w-full">
+      <div className="max-w-7xl mx-auto w-full flex flex-col items-center gap-12">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={isVisible ? { opacity: 1, y: 0 } : {}}
@@ -88,21 +88,21 @@ export const Contact = () => {
             Click to copy email address
           </motion.p>
         </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={isVisible ? { opacity: 1 } : {}}
-          transition={{ duration: 0.8, delay: 0.7 }}
-          className="mt-32 pt-12 border-t border-white/10 text-center"
-        >
-          <p className="text-gray-500 text-sm">
-            © {new Date().getFullYear()} Northbound Inc. All rights reserved.
-          </p>
-          <p className="text-gray-600 text-xs mt-2">
-            The only way is up.
-          </p>
-        </motion.div>
       </div>
+
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={isVisible ? { opacity: 1 } : {}}
+        transition={{ duration: 0.8, delay: 0.7 }}
+        className="mt-12 pt-12 border-t border-white/10 text-center"
+      >
+        <p className="text-gray-500 text-sm">
+          © {new Date().getFullYear()} Northbound Inc. All rights reserved.
+        </p>
+        <p className="text-gray-600 text-xs mt-2">
+          The only way is up.
+        </p>
+      </motion.div>
     </section>
   );
 };
