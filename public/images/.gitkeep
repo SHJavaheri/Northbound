@@ -1,0 +1,13 @@
+# Placeholder Images Directory
+
+This directory contains placeholder images for the parallax effect.
+Replace these with your actual image assets:
+
+- parallax-bg.png - Furthest background layer (slowest movement, 0.2x scroll speed)
+- parallax-mid.png - Middle depth layer (0.5x scroll speed)
+- parallax-foreground.png - Closest layer (0.8x scroll speed)
+- hero-device.png - Optional central focal object
+- grid.png - Subtle grid overlay
+- noise.png - Grain texture (low opacity)
+
+All images should be optimized for web (PNG or WebP format recommended).
