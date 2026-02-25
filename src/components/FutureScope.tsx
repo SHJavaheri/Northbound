@@ -11,7 +11,8 @@ export const FutureScope = () => {
       ref={sectionRef}
       className="relative min-h-screen flex items-center justify-center py-32 px-6 md:px-12 bg-gradient-to-b from-deep-black via-near-black to-deep-black"
     >
-      <div className="max-w-7xl mx-auto w-full">
+      <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_top,_rgba(124,58,237,0.12),_rgba(10,10,10,0))] mix-blend-screen opacity-70" />
+      <div className="relative z-10 max-w-7xl mx-auto w-full">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={isVisible ? { opacity: 1, y: 0 } : {}}

@@ -13,19 +13,19 @@ export const Hero = () => {
   return (
     <section className="relative h-screen w-full overflow-hidden">
       <ParallaxLayer speed={-0.3} zIndex={1} className="opacity-50">
-        <div className="absolute inset-0 bg-gradient-to-b from-purple-950/70 via-purple-900/70 to-deep-black" />
+        <div className="absolute inset-0 bg-gradient-to-b from-purple-950/45 via-purple-900/45 to-deep-black" />
       </ParallaxLayer>
 
       <ParallaxLayer speed={-0.15} zIndex={2} className="opacity-35">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900/35 via-indigo-900/30 to-transparent" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900/20 via-indigo-900/20 to-transparent" />
       </ParallaxLayer>
 
       <ParallaxLayer speed={-0.08} zIndex={0} className="opacity-60">
-        <div className="absolute inset-0 blur-3xl bg-[radial-gradient(circle_at_top,_rgba(152,105,244,0.5),_rgba(15,23,42,0))]" />
+        <div className="absolute inset-0 blur-3xl bg-[radial-gradient(circle_at_top,_rgba(152,105,244,0.25),_rgba(15,23,42,0))]" />
       </ParallaxLayer>
 
       <ParallaxLayer speed={0.02} zIndex={0} className="opacity-30">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(99,102,241,0.55),_rgba(15,23,42,0))]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(99,102,241,0.2),_rgba(15,23,42,0))]" />
       </ParallaxLayer>
 
       <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 md:px-12">
