@@ -1,6 +1,6 @@
 import { createContext, PropsWithChildren, useCallback, useContext, useEffect, useRef, useState } from 'react';
 
-const AUDIO_SRC = '/audio/ambient.mp3';
+const AUDIO_SRC = `${import.meta.env.BASE_URL}audio/ambient.mp3`;
 
 const AmbientAudioContext = createContext<HTMLAudioElement | null>(null);
 
